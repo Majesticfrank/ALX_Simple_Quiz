@@ -1,8 +1,6 @@
 function checkAnswer(){
     let correctAnswer="4";
 
-    let button = document.getElementById("submit-answer");
-    button.addEventListener("click", checkAnswer);
 
     let ClickedOption = document.querySelector('input[name="quiz"]:checked');
     let feedbackElement =document.getElementById('feedback');
@@ -17,11 +15,16 @@ function checkAnswer(){
             feedbackElement.style.color="green";
         }else{
             feedbackElement.innerHTML="That's incorrect. Try again!"
+            feedbackElement.style.color="red";
 
         }
 
         }
+
      }
+     
+    let button = document.getElementById("submit-answer");
+    button.addEventListener("click", checkAnswer);
 
 
 
