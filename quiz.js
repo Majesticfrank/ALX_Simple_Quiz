@@ -7,12 +7,12 @@ function checkAnswer(){
     let ClickedOption = document.querySelector('input[name="quiz"]:checked');
     let feedbackElement =document.getElementById('feedback');
 
-     if(ClickedOption){
+     if (ClickedOption){
 
-        let userAnswer =ClickedOption.value;
+        let userAnswer = ClickedOption.value;
 
 
-        if(userAnswer===correctAnswer){
+        if (userAnswer === correctAnswer){
             feedbackElement.innerHTML="Correct! Well done.";
             feedbackElement.style.color="green";
         }else{
